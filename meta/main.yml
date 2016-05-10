@@ -1,0 +1,16 @@
+galaxy_info:
+  author: "Rob Cousins"
+  company: Highops
+  description: installs ovirt hosted engine 3.6
+  license: GPLv3
+  min_ansible_version: 1.4 
+  platforms:
+   - name: EL
+     versions:
+      - 7
+  categories:
+   - kvm:ovirt
+  galaxy_tags:
+  - oVirt
+  - vdsm
+dependencies: []

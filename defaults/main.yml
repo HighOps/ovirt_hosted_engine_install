@@ -1,0 +1,17 @@
+ovirt_host_add:
+  host_hostID: 1
+  host_fqdn: host1.example.com
+  host_master_password: somepassword
+  host_master_fqdn: host1.example.com
+  engine_appHostName: hosted_engine
+  engine_cpu_model: model_Nehalem
+  engine_user: admin@internal
+  engine_password: somepassword
+  engine_domain: example.com
+  engine_fqdn: engine.example.com
+  engine_ip: '192.168.15.50/24'
+  engine_gateway: '192.168.15.1'
+  engine_storageDomainConnection: '192.168.15.51:/hosted_storage'
+  engine_ovirt_engine_appliance: ovirt-engine-appliance-3.6-20160420.1.el7.centos.ova
+  engine_vmMemSizeMB: 10000
+  engine_vmVCpus: 2  

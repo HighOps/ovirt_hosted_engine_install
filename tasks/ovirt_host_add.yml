@@ -1,0 +1,30 @@
+- name: ovirt answer file
+  template: src=ovirt-answer.conf dest=/root/
+  register: Install_ovirt_engine
+
+- name: Install ovirt-engine rpm
+  yum: name=http://resources.ovirt.org/pub/yum-repo/ovirt-release36.rpm state=installed
+  when: Install_ovirt_engine.changed
+
+- name: Install ovirt-engine
+  yum: name={{item}} state=installed
+  when: Install_ovirt_engine.changed
+  with_items:
+   - iptables-services
+   - ovirt-engine-appliance
+   - ovirt-hosted-engine-setup
+ 
+- name: update packages
+  yum: name=ovirt-engine-setup* state=latest
+  when: Install_ovirt_engine.changed
+
+  ##https://bugzilla.redhat.com/show_bug.cgi?id=1158885
+- name: ovirt patch
+  file: src=remote_answerfile.py dest=/usr/share/ovirt-hosted-engine-setup/plugins/ovirt-hosted-engine-setup/core/
+ 
+- name: configure ovirt-engine
+  command: ovirt-hosted-engine-setup --config-append=/root/ovirt-answer.conf
+  when: Install_ovirt_engine.changed
+
+
+
