@@ -20,7 +20,7 @@
 
   ##https://bugzilla.redhat.com/show_bug.cgi?id=1158885
 - name: ovirt patch
-  file: src=remote_answerfile.py dest=/usr/share/ovirt-hosted-engine-setup/plugins/ovirt-hosted-engine-setup/core/
+  copy: src=remote_answerfile.py dest=/usr/share/ovirt-hosted-engine-setup/plugins/ovirt-hosted-engine-setup/core/
  
 - name: configure ovirt-engine
   command: ovirt-hosted-engine-setup --config-append=/root/ovirt-answer.conf
