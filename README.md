@@ -36,7 +36,7 @@ Username for the hosted engine.
 * ovirt_host_add_engine_password:
 Password for the hosted engine.
 
-* engine_domain:
+* ovirt_host_add_engine_domain:
 Engine domain name.
 
 * ovirt_host_add_engine_fqdn:
@@ -51,7 +51,7 @@ Gateway address fpr hosted engine.
 * ovirt_host_add_engine_storageDomainConnection: 
 IP or url for hosted engine storage server(NFS)
 
-* engine_ovirt_engine_appliance: 
+* ovirt_host_add_engine_ovirt_engine_appliance: 
 The appliance used for the hosted engine.
 
 * ovirt_host_add_engine_vmMemSizeMB:
