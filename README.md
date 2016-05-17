@@ -12,52 +12,52 @@ Centos 7
 Ansible 1.4 and a above
 
 ##Role variables
-* ovirt_host_add.host_hostID: 
+* ovirt_host_add_host_hostID: 
 each host needs a unique ID.
 
-* host_fqdn: 
+* ovirt_host_add_host_fqdn: 
 FQDN for the host being installed.
 
-* host_master_password: 
+* ovirt_host_add_host_master_password: 
 Password for the first host in the datacenter.
 
-* host_master_fqdn:
+* ovirt_host_add_host_master_fqdn:
 FQDN of the first host in the datacenter.
 
-* engine_appHostName:
+* ovirt_host_add_engine_appHostName:
 Name of the host as show in the UI. 
 
-* engine_cpu_model:
+* ovirt_host_add_engine_cpu_model:
 Name of the minimal cpu model allowed.
 
-* engine_user:
+* ovirt_host_add_engine_user:
 Username for the hosted engine.
 
-* engine_password:
+* ovirt_host_add_engine_password:
 Password for the hosted engine.
 
 * engine_domain:
 Engine domain name.
 
-* engine_fqdn:
+* ovirt_host_add_engine_fqdn:
 FQDN for the hosted engine.
 
-* engine_ip:
+* ovirt_host_add_engine_ip:
 IP address for the hosted engine.
 
-* engine_gateway: 
+* ovirt_host_add_engine_gateway: 
 Gateway address fpr hosted engine.
 
-* engine_storageDomainConnection: 
+* ovirt_host_add_engine_storageDomainConnection: 
 IP or url for hosted engine storage server(NFS)
 
 * engine_ovirt_engine_appliance: 
 The appliance used for the hosted engine.
 
-* engine_vmMemSizeMB:
+* ovirt_host_add_engine_vmMemSizeMB:
 Size of ram ro allocate to hosted engine(minimum requirement 16gig).
 
-* engine_vmVCpus:
+* ovirt_host_add_engine_vmVCpus:
 Total CPUs to use for hosted engine.
 
 ## Example Playbook
