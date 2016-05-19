@@ -15,5 +15,4 @@ ovirt_hosted_engine_install_engine_storageDomainConnection: '192.168.15.51:/host
 ovirt_hosted_engine_install_engine_ovirt_engine_appliance: ovirt-engine-appliance-3.6-20160420.1.el7.centos.ova
 ovirt_hosted_engine_install_engine_vmMemSizeMB: 10000
 ovirt_hosted_engine_install_engine_vmVCpus: 2
-ovirt_hosted_engine_install_engine_gateway: 192.168.15.1
 ovirt_hosted_engine_install_engine_dns: 8.8.8.8
