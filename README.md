@@ -60,6 +60,12 @@ Size of ram ro allocate to hosted engine(minimum requirement 16gig).
 * ovirt_hosted_engine_install_engine_vmVCpus:
 Total CPUs to use for hosted engine.
 
+* ovirt_hosted_engine_install_engine_gateway:
+The gateway to be injected into hosted engine.
+
+* ovirt_hosted_engine_install_engine_dns:
+The DNS to be injected into hosted engine.
+
 ## Example Playbook
 ```yaml
 - hosts: ovirt_host
